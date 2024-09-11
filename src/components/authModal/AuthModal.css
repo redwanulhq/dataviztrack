@@ -1,0 +1,125 @@
+body.auth-modal {
+  overflow: hidden;
+}
+
+.auth-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: #000000c7;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth-modal.false {
+  display: none;
+}
+.auth-modal-container {
+  background-color: white;
+  height: -moz-fit-content;
+  height: fit-content;
+  max-height: 100vh;
+  width: 100%;
+  max-width: 520px;
+  overflow-y: auto;
+  animation: modalAnimation 0.5s forwards;
+}
+
+@keyframes modalAnimation {
+  0% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.auth-modal-tabs-container {
+  display: flex;
+}
+
+.single-auth-modal-tab {
+  flex: 1;
+  text-align: center;
+  padding: 18px;
+  cursor: pointer;
+  color: #444;
+}
+.single-auth-modal-tab.false {
+  background-color: #6a6a6a;
+  color: #ddd;
+}
+.auth-modal-form-container {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.single-auth-input-box {
+  display: flex;
+  border: 1px solid #ddd;
+}
+.saib-icon {
+  width: 60px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid #ddd;
+  font-size: 22px;
+  color: #777;
+}
+.single-auth-input-box input {
+  height: 50px;
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 18px;
+  padding: 0 20px;
+  color: #444;
+}
+.single-auth-input-box input::placeholder {
+  color: rgb(180, 180, 180);
+  font-size: 16px;
+}
+
+.single-auth-input-box.sai-pass-box {
+  position: relative;
+}
+.single-auth-input-box.sai-pass-box > div:last-child {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-left: 1px solid #ddd;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 65px;
+  font-size: 14px;
+  color: #666;
+  cursor: pointer;
+}
+button.auth-from-submit-btn {
+  border: none;
+  height: 50px;
+  background-color: #333;
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+.forgot-pass-link {
+  text-align: right;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 300;
+  cursor: pointer;
+  z-index: 100000000000;
+  margin: -10px 0;
+}

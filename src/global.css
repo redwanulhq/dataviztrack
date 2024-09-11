@@ -1,0 +1,173 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color: #213547;
+  background-color: #ffffff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+table {
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+  width: 100%;
+}
+table td {
+  border: 1px solid #ddd;
+  padding: 8px 10px;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 6px;
+  background-color: white;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #999;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-button {
+  display: none;
+}
+.grid-table-row {
+  display: grid;
+  grid-template-columns: 60px 2fr 1fr 140px 150px;
+  border-bottom: 1px solid #efefef;
+}
+.grid-table-row.header {
+  background-color: #5886d9;
+  color: #fff;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border: "none";
+}
+.grid-table-row.header > div {
+  padding: 10px;
+}
+.grid-table-row div {
+  padding: 15px 10px;
+  text-align: center;
+}
+.grid-table-row > div:nth-child(2) {
+  text-align: left;
+}
+.grid-table-row.body > div:nth-child(2) {
+  text-align: left;
+  cursor: pointer;
+  width: max-content;
+}
+.grid-table-row.body > div:nth-child(2):hover {
+  color: #5886d9;
+}
+.grid-table-cell.action {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 0;
+}
+.action-btn {
+  height: 35px;
+  width: 35px;
+  background-color: #ddd;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0 !important;
+}
+
+.action-btn:first-of-type {
+  background-color: #9579f3;
+  color: #e0e6f0;
+  transition: 0.3s;
+}
+.action-btn:first-of-type:hover {
+  background-color: #7e5ee6;
+  color: #ddd;
+}
+.action-btn:nth-child(2) {
+  background-color: #80a8f3;
+  color: #e0e6f0;
+  transition: 0.3s;
+}
+.action-btn:nth-child(2):hover {
+  background-color: #377dff;
+  color: #ddd;
+}
+.action-btn:last-of-type {
+  background-color: #f88490;
+  color: #e0e6f0;
+  transition: 0.3s;
+}
+.action-btn:last-of-type:hover {
+  background-color: #dc3545;
+  color: #ddd;
+}
+
+button.pagination-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+  width: 35px;
+  border-radius: 100%;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 20px;
+  background-color: #fff;
+}
+button.pagination-btn.false {
+  pointer-events: none;
+  background: transparent;
+  color: #7b7b7b;
+}
+button.pagination-btn:hover {
+  background-color: #efefef;
+}
+.chart-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 15px 25px;
+}
+.chart-title {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+}
+button.chart-header-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+  width: 35px;
+  border-radius: 100%;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 20px;
+  background-color: #fff;
+}
+button.chart-header-btn:hover {
+  background-color: #efefef;
+}
